@@ -1,0 +1,133 @@
+<div class="ui masthead vertical segment" [hidden]="mainDisplay">
+  <h2 class="ui yellow center aligned icon header">Quick Order </h2>
+  <div class="ui container">
+    <div class="ui divider"></div>
+    <div class="ui three column centered grid">
+      <div class="column" (click)="advancePaging(1)">
+        <img class="ui centered tiny image" src="../../assets/svg-files/cof.svg">
+      </div>
+      <div class="column" (click)="advancePaging(1)">
+        <img class="ui centered tiny image" src="../../assets/svg-files/method-draw-image.svg">
+      </div>
+    </div>
+    <div class="ui three column centered grid" (click)="advancePaging(1)">
+      <p class="text"> COFFEE + CROISSANT </p>
+    </div>
+    <div class="ui divider"></div>
+    <div class="ui two column centered grid">
+      <div class="column" (click)="advancePaging(2)">
+        <img class="ui centered tiny image" src="../../assets/svg-files/coffe.svg">
+      </div>
+    </div>
+    <div class="ui three column centered grid" (click)="advancePaging(2)">
+      <p class="text"> COFFEE </p>
+    </div>
+    <div class="ui divider"></div>
+    <div class="ui two column centered grid">
+      <div class="column" (click)="advancePaging(3)">
+        <img class="ui centered tiny image" src="../../assets/svg-files/food.svg">
+      </div>
+    </div>
+    <div class="ui three column centered grid" (click)="advancePaging(3)">
+      <p class="text"> SANDWICH </p>
+    </div>
+    <div class="ui divider"></div>
+    <div class="ui two column centered grid">
+      <div class="column" (click)="advancePaging(4)">
+        <img class="ui centered tiny image" src="../../assets/svg-files/bag_food.svg">
+      </div>
+    </div>
+    <div class="ui three column centered grid" (click)="advancePaging(4)">
+      <p class="text"> SNACK </p>
+    </div>
+    <div class="ui divider"></div>
+  </div>
+</div>
+
+
+
+<div [hidden]="coffeAndDrinkDisplay" class="ui masthead vertical segment">
+  <div class="ui container">
+    <button class="ui inverted red button" (click)="backwardPagin()">
+      <i class="chevron circle left icon"></i>
+      Return
+    </button>
+    <div class="ui divider"></div>
+    <div class="ui three column centered grid">
+      <div class="column">
+        <img class="ui centered tiny image" src="../../assets/svg-files/cof.svg">
+      </div>
+      <div class="column">
+        <img class="ui centered tiny image" src="../../assets/svg-files/method-draw-image.svg">
+      </div>
+    </div>
+    <div class="ui three column centered grid">
+      <p class="text"> COFFEE + CROISSANT </p>
+    </div>
+    <div class="ui divider"></div>
+  </div>
+  <order></order>
+</div>
+
+<div [hidden]="coffeDisplay" class="ui masthead vertical segment">
+  <div class="ui container">
+    <button class="ui inverted red button" (click)="backwardPagin()">
+      <i class="chevron circle left icon"></i>
+      Return
+    </button>
+    <div class="ui divider"></div>
+    <div class="ui two column centered grid">
+      <div class="column">
+        <img class="ui centered tiny image" src="../../assets/svg-files/coffe.svg">
+      </div>
+    </div>
+    <div class="ui three column centered grid">
+      <p class="text"> COFFEE </p>
+    </div>
+    <div class="ui divider"></div>
+  </div>
+  <order></order>
+</div>
+
+<div [hidden]="sandwichDisplay" class="ui masthead vertical segment">
+  <div class="ui container">
+    <button class="ui inverted red button" (click)="backwardPagin()">
+      <i class="chevron circle left icon"></i>
+      Return
+    </button>
+    <div class="ui divider"></div>
+    <div class="ui two column centered grid">
+      <div class="column">
+        <img class="ui centered tiny image" src="../../assets/svg-files/food.svg">
+      </div>
+    </div>
+    <div class="ui three column centered grid">
+      <p class="text"> SANDWICH </p>
+    </div>
+    <div class="ui divider"></div>
+  </div>
+  <order></order>
+</div>
+
+
+
+<div [hidden]="snackDisplay" class="ui masthead vertical segment">
+  <div class="ui container" >
+    <button class="ui inverted red button" (click)="backwardPagin()">
+      <i class="chevron circle left icon"></i>
+      Return
+    </button>
+    <div class="ui divider"></div>
+    <div class="ui two column centered grid">
+      <div class="column">
+        <img class="ui centered tiny image" src="../../assets/svg-files/bag_food.svg">
+      </div>
+    </div>
+    <div class="ui three column centered grid">
+      <p class="text"> SNACK </p>
+    </div>
+    <div class="ui divider"></div>
+  </div>
+  <order></order>
+</div>
+

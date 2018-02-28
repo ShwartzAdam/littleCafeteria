@@ -1,0 +1,28 @@
+<div class="ui masthead vertical segment">
+  <div class="ui container">
+    <div class="ui one column grid">
+      <button class="ui inverted red button" [hidden]="displayReturnButton" (click)="changeDisplay(3)">
+        <i class="chevron circle left icon"></i>
+        Return
+      </button>
+    </div>
+    <div class="ui one column grid">
+        <div class="column">
+          <img class="ui centered circular massive image" src="../../../assets/png/Logo_Little%20Cafeteria.png">
+        </div>
+        <div class="column">
+          <h3 class="ui grey inverted header centered"> Welcome to Little Cafeteria</h3>
+        </div>
+    </div>
+        <div class="ui divider"></div>
+        <login [hidden]="displayLogin"></login>
+        <sign-up [hidden]="displaySignUp"></sign-up>
+        <forgotpass [hidden]="displayForPass"></forgotpass>
+        <div class="ui divider"></div>
+        <div class="column" [hidden]="displayNav">
+          <button class="tiny ui left floated teal button" (click)="changeDisplay(1)">Forgot Password?</button>
+          <button class="tiny ui right floated teal button" (click)="changeDisplay(2)">Sign-Up</button>
+        </div>
+  </div>
+</div>
+
